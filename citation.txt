@@ -1,0 +1,9 @@
+@misc{REPO045,
+    author = "Rajput, Shashank and Mehta, Nikhil and Singh, Anima and Keshavan, Raghunandan H. and Vu, Trung and Heldt, Lukasz and Hong, Lichan and Tay, Yi and Tran, Vinh Q. and Samost, Jonah and Kula, Maciej and Chi, Ed H. and Sathiamoorthy, Maheswaran",
+    archiveprefix = "arXiv",
+    eprint = "2305.05065",
+    primaryclass = "cs.IR",
+    title = "{Recommender Systems with Generative Retrieval}",
+    url = "https://arxiv.org/abs/2305.05065",
+    year = "2023"
+}
