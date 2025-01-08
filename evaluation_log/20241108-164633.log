@@ -1,0 +1,22 @@
+2024-11-08 16:46:35,774 - INFO - hyper-param:
+2024-11-08 16:46:35,774 - INFO -   ckpt_dir: ./checkpoints
+2024-11-08 16:46:35,775 - INFO -   dataset: Bili_Cartoon
+2024-11-08 16:46:35,775 - INFO -   device: cuda:3
+2024-11-08 16:46:35,775 - INFO -   plm_dir: ../LLM/
+2024-11-08 16:46:35,775 - INFO -   plm_name: t5-base
+2024-11-08 16:46:35,775 - INFO -   tokenizer_plm: sentence-t5-base
+2024-11-08 16:46:35,775 - INFO -   num_beams: 50
+2024-11-08 16:46:35,775 - INFO -   batch_size: 16
+2024-11-08 16:46:35,775 - INFO -   K: 256
+2024-11-08 16:46:35,775 - INFO -   D: 4
+2024-11-08 16:46:35,775 - INFO -   item_sep: ,
+2024-11-08 16:46:35,775 - INFO -   max_len: 20
+2024-11-08 16:46:35,775 - INFO -   max_sent_len: 512
+2024-11-08 16:46:35,775 - INFO -   add_user_prefix: False
+2024-11-08 16:46:35,775 - INFO -   user_prefix: <u_{}>
+2024-11-08 16:46:35,775 - INFO -   metrics: ['hit@5', 'hit@10', 'ndcg@5', 'ndcg@10']
+2024-11-08 17:32:57,327 - INFO - evaluation result:
+2024-11-08 17:32:57,328 - INFO -   hit@5: 1669.0
+2024-11-08 17:32:57,328 - INFO -   hit@10: 2576.0
+2024-11-08 17:32:57,328 - INFO -   ndcg@5: 1074.7033103643255
+2024-11-08 17:32:57,328 - INFO -   ndcg@10: 1366.360027265859

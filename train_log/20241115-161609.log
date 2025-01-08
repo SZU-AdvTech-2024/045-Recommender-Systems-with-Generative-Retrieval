@@ -1,0 +1,167 @@
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/transformers/utils/import_utils.py:455: FutureWarning: The util is_torch_bf16_available is deprecated, please use is_torch_bf16_gpu_available or is_torch_bf16_cpu_available instead according to whether it's used with cpu or gpu
+  warnings.warn(
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+2024-11-15 16:16:29,709 - INFO - hyper-param:
+2024-11-15 16:16:29,710 - INFO -   output_dir: ./checkpoints
+2024-11-15 16:16:29,710 - INFO -   batch_size: 128
+2024-11-15 16:16:29,710 - INFO -   bf16: True
+2024-11-15 16:16:29,710 - INFO -   epoch: 200
+2024-11-15 16:16:29,710 - INFO -   optimizer: adamw_torch
+2024-11-15 16:16:29,710 - INFO -   lr: 0.0005
+2024-11-15 16:16:29,710 - INFO -   weight_decay: 0.01
+2024-11-15 16:16:29,710 - INFO -   lr_scheduler_type: cosine
+2024-11-15 16:16:29,710 - INFO -   warmup_ratio: 0.01
+2024-11-15 16:16:29,710 - INFO -   gradient_accumulation_steps: 2
+2024-11-15 16:16:29,710 - INFO -   plm_dir: ../LLM/
+2024-11-15 16:16:29,710 - INFO -   plm_name: t5-base
+2024-11-15 16:16:29,710 - INFO -   tokenizer_plm: sentence-t5-base
+2024-11-15 16:16:29,710 - INFO -   dataset: Bili_Cartoon
+2024-11-15 16:16:29,710 - INFO -   token_type: pretrained_nc
+2024-11-15 16:16:29,710 - INFO -   K: 256
+2024-11-15 16:16:29,710 - INFO -   D: 3
+2024-11-15 16:16:29,710 - INFO -   add_user_prefix: False
+2024-11-15 16:16:29,710 - INFO -   user_prefix: <u_{}>
+2024-11-15 16:16:29,710 - INFO -   item_sep: ,
+2024-11-15 16:16:29,710 - INFO -   max_len: 20
+2024-11-15 16:16:29,710 - INFO -   max_sent_len: 512
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/transformers/training_args.py:1525: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+2024-11-15 16:16:29,999 - WARNING - Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 3.6442553997039795, 'eval_runtime': 52.3696, 'eval_samples_per_second': 578.58, 'eval_steps_per_second': 2.272, 'epoch': 0.997946611909651}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 3.268197536468506, 'eval_runtime': 52.7499, 'eval_samples_per_second': 574.408, 'eval_steps_per_second': 2.256, 'epoch': 2.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 4.698, 'grad_norm': 0.17754855751991272, 'learning_rate': 0.00049999989554653, 'epoch': 2.0533880903490758}
+{'eval_loss': 2.927802562713623, 'eval_runtime': 57.9809, 'eval_samples_per_second': 522.586, 'eval_steps_per_second': 2.052, 'epoch': 2.9979466119096507}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 2.692544460296631, 'eval_runtime': 57.0894, 'eval_samples_per_second': 530.746, 'eval_steps_per_second': 2.084, 'epoch': 4.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 2.7022, 'grad_norm': 0.35233357548713684, 'learning_rate': 0.0004998592163231771, 'epoch': 4.1067761806981515}
+{'eval_loss': 2.5311367511749268, 'eval_runtime': 57.8385, 'eval_samples_per_second': 523.873, 'eval_steps_per_second': 2.057, 'epoch': 4.997946611909651}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 2.3869898319244385, 'eval_runtime': 57.1806, 'eval_samples_per_second': 529.9, 'eval_steps_per_second': 2.081, 'epoch': 6.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 2.2867, 'grad_norm': 0.3948380947113037, 'learning_rate': 0.0004994522478556245, 'epoch': 6.160164271047228}
+{'eval_loss': 2.371971845626831, 'eval_runtime': 55.2278, 'eval_samples_per_second': 548.637, 'eval_steps_per_second': 2.155, 'epoch': 6.997946611909651}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 2.2458484172821045, 'eval_runtime': 56.7277, 'eval_samples_per_second': 534.13, 'eval_steps_per_second': 2.098, 'epoch': 8.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 2.085, 'grad_norm': 0.2038879692554474, 'learning_rate': 0.0004987794238734228, 'epoch': 8.213552361396303}
+{'eval_loss': 2.2131736278533936, 'eval_runtime': 55.2115, 'eval_samples_per_second': 548.798, 'eval_steps_per_second': 2.155, 'epoch': 8.99794661190965}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 2.039641857147217, 'eval_runtime': 55.4618, 'eval_samples_per_second': 546.322, 'eval_steps_per_second': 2.146, 'epoch': 10.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.8739, 'grad_norm': 0.24974235892295837, 'learning_rate': 0.0004978414614435361, 'epoch': 10.26694045174538}
+{'eval_loss': 1.9802166223526, 'eval_runtime': 54.3682, 'eval_samples_per_second': 557.311, 'eval_steps_per_second': 2.189, 'epoch': 10.99794661190965}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.9410400390625, 'eval_runtime': 55.1305, 'eval_samples_per_second': 549.605, 'eval_steps_per_second': 2.159, 'epoch': 12.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.6801, 'grad_norm': 0.2112937569618225, 'learning_rate': 0.0004966393602061228, 'epoch': 12.320328542094456}
+{'eval_loss': 1.8542097806930542, 'eval_runtime': 54.9103, 'eval_samples_per_second': 551.809, 'eval_steps_per_second': 2.167, 'epoch': 12.99794661190965}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.8357292413711548, 'eval_runtime': 55.9052, 'eval_samples_per_second': 541.989, 'eval_steps_per_second': 2.129, 'epoch': 14.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.582, 'grad_norm': 0.28054380416870117, 'learning_rate': 0.0004951744013091616, 'epoch': 14.373716632443532}
+{'eval_loss': 1.8142261505126953, 'eval_runtime': 55.0989, 'eval_samples_per_second': 549.92, 'eval_steps_per_second': 2.16, 'epoch': 14.99794661190965}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.8003302812576294, 'eval_runtime': 55.0065, 'eval_samples_per_second': 550.844, 'eval_steps_per_second': 2.163, 'epoch': 16.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.5198, 'grad_norm': 0.26837900280952454, 'learning_rate': 0.0004934481460430591, 'epoch': 16.427104722792606}
+{'eval_loss': 1.789291501045227, 'eval_runtime': 66.7868, 'eval_samples_per_second': 453.683, 'eval_steps_per_second': 1.782, 'epoch': 16.99794661190965}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.7384626865386963, 'eval_runtime': 64.9578, 'eval_samples_per_second': 466.457, 'eval_steps_per_second': 1.832, 'epoch': 18.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.4741, 'grad_norm': 0.21707837283611298, 'learning_rate': 0.0004914624341766933, 'epoch': 18.480492813141684}
+{'eval_loss': 1.7633601427078247, 'eval_runtime': 64.6778, 'eval_samples_per_second': 468.476, 'eval_steps_per_second': 1.84, 'epoch': 18.99794661190965}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.7857592105865479, 'eval_runtime': 65.4048, 'eval_samples_per_second': 463.269, 'eval_steps_per_second': 1.819, 'epoch': 20.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.4406, 'grad_norm': 0.14178264141082764, 'learning_rate': 0.0004892193819966672, 'epoch': 20.53388090349076}
+{'eval_loss': 1.7508140802383423, 'eval_runtime': 64.563, 'eval_samples_per_second': 469.309, 'eval_steps_per_second': 1.843, 'epoch': 20.99794661190965}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.7316666841506958, 'eval_runtime': 65.0018, 'eval_samples_per_second': 466.141, 'eval_steps_per_second': 1.831, 'epoch': 22.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.4123, 'grad_norm': 0.18979279696941376, 'learning_rate': 0.0004867213800518606, 'epoch': 22.587268993839835}
+{'eval_loss': 1.737151861190796, 'eval_runtime': 65.4122, 'eval_samples_per_second': 463.216, 'eval_steps_per_second': 1.819, 'epoch': 22.99794661190965}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.732982873916626, 'eval_runtime': 63.5197, 'eval_samples_per_second': 477.017, 'eval_steps_per_second': 1.873, 'epoch': 24.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.3891, 'grad_norm': 0.15673579275608063, 'learning_rate': 0.0004839710906056861, 'epoch': 24.640657084188913}
+{'eval_loss': 1.7534865140914917, 'eval_runtime': 63.1952, 'eval_samples_per_second': 479.467, 'eval_steps_per_second': 1.883, 'epoch': 24.99794661190965}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.7295739650726318, 'eval_runtime': 57.1718, 'eval_samples_per_second': 529.982, 'eval_steps_per_second': 2.081, 'epoch': 26.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.3661, 'grad_norm': 0.1536760777235031, 'learning_rate': 0.00048097144479876256, 'epoch': 26.694045174537987}
+{'eval_loss': 1.7528642416000366, 'eval_runtime': 63.1314, 'eval_samples_per_second': 479.952, 'eval_steps_per_second': 1.885, 'epoch': 26.99794661190965}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.7506377696990967, 'eval_runtime': 56.9418, 'eval_samples_per_second': 532.122, 'eval_steps_per_second': 2.09, 'epoch': 28.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.3438, 'grad_norm': 0.1916627287864685, 'learning_rate': 0.00047772563952503083, 'epoch': 28.747433264887064}
+{'eval_loss': 1.727020263671875, 'eval_runtime': 54.8839, 'eval_samples_per_second': 552.075, 'eval_steps_per_second': 2.168, 'epoch': 28.99794661190965}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.7546859979629517, 'eval_runtime': 54.7049, 'eval_samples_per_second': 553.881, 'eval_steps_per_second': 2.175, 'epoch': 30.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.3249, 'grad_norm': 0.2047204077243805, 'learning_rate': 0.00047423713402464204, 'epoch': 30.80082135523614}
+{'eval_loss': 1.754225730895996, 'eval_runtime': 54.2381, 'eval_samples_per_second': 558.648, 'eval_steps_per_second': 2.194, 'epoch': 30.99794661190965}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.7492865324020386, 'eval_runtime': 55.4605, 'eval_samples_per_second': 546.335, 'eval_steps_per_second': 2.146, 'epoch': 32.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.304, 'grad_norm': 0.18337422609329224, 'learning_rate': 0.0004705096461972467, 'epoch': 32.85420944558521}
+{'eval_loss': 1.7453657388687134, 'eval_runtime': 59.9111, 'eval_samples_per_second': 505.75, 'eval_steps_per_second': 1.986, 'epoch': 32.997946611909654}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.7702829837799072, 'eval_runtime': 64.2395, 'eval_samples_per_second': 471.672, 'eval_steps_per_second': 1.852, 'epoch': 34.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.2851, 'grad_norm': 0.20161539316177368, 'learning_rate': 0.0004665471486396172, 'epoch': 34.90759753593429}
+{'eval_loss': 1.7326757907867432, 'eval_runtime': 62.8429, 'eval_samples_per_second': 482.155, 'eval_steps_per_second': 1.894, 'epoch': 34.997946611909654}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.7375072240829468, 'eval_runtime': 60.6802, 'eval_samples_per_second': 499.339, 'eval_steps_per_second': 1.961, 'epoch': 36.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'loss': 1.2645, 'grad_norm': 0.1979900449514389, 'learning_rate': 0.0004623538644118244, 'epoch': 36.96098562628337}
+{'eval_loss': 1.7354161739349365, 'eval_runtime': 61.7853, 'eval_samples_per_second': 490.408, 'eval_steps_per_second': 1.926, 'epoch': 36.997946611909654}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.7666494846343994, 'eval_runtime': 56.6303, 'eval_samples_per_second': 535.049, 'eval_steps_per_second': 2.101, 'epoch': 38.0}
+/home/hcw/miniconda3/envs/pytorch_lqx/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+{'eval_loss': 1.7602399587631226, 'eval_runtime': 58.9785, 'eval_samples_per_second': 513.746, 'eval_steps_per_second': 2.018, 'epoch': 38.997946611909654}
+There were missing keys in the checkpoint model loaded: ['encoder.embed_tokens.weight', 'decoder.embed_tokens.weight', 'lm_head.weight'].
+{'train_runtime': 25510.1427, 'train_samples_per_second': 976.419, 'train_steps_per_second': 1.905, 'train_loss': 1.7516540231680608, 'epoch': 38.997946611909654}

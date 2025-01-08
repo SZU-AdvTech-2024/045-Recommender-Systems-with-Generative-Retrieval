@@ -1,0 +1,23 @@
+2024-11-13 09:24:20,908 - INFO - hyper-param:
+2024-11-13 09:24:20,909 - INFO -   ckpt_dir: ./checkpoints
+2024-11-13 09:24:20,909 - INFO -   dataset: Games
+2024-11-13 09:24:20,909 - INFO -   device: cuda:4
+2024-11-13 09:24:20,909 - INFO -   plm_dir: ../LLM/
+2024-11-13 09:24:20,909 - INFO -   plm_name: t5-base
+2024-11-13 09:24:20,909 - INFO -   tokenizer_plm: sentence-t5-base
+2024-11-13 09:24:20,909 - INFO -   token_type: pretrained
+2024-11-13 09:24:20,909 - INFO -   num_beams: 50
+2024-11-13 09:24:20,909 - INFO -   batch_size: 16
+2024-11-13 09:24:20,909 - INFO -   K: 256
+2024-11-13 09:24:20,909 - INFO -   D: 3
+2024-11-13 09:24:20,909 - INFO -   item_sep: ,
+2024-11-13 09:24:20,909 - INFO -   max_len: 20
+2024-11-13 09:24:20,909 - INFO -   max_sent_len: 512
+2024-11-13 09:24:20,909 - INFO -   add_user_prefix: False
+2024-11-13 09:24:20,909 - INFO -   user_prefix: <u_{}>
+2024-11-13 09:24:20,909 - INFO -   metrics: ['hit@5', 'hit@10', 'ndcg@5', 'ndcg@10']
+2024-11-13 12:13:48,870 - INFO - evaluation result:
+2024-11-13 12:13:48,870 - INFO -   hit@5: 0.06065761880267479
+2024-11-13 12:13:48,870 - INFO -   hit@10: 0.0986823883195505
+2024-11-13 12:13:48,870 - INFO -   ndcg@5: 0.03979059592847001
+2024-11-13 12:13:48,870 - INFO -   ndcg@10: 0.05197930461874448
